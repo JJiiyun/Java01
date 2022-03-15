@@ -10,15 +10,18 @@ public class Main {
         
         if (H > 24) {
             H = H - 24;
-        } if (M1 > 60) {
+            }
+        if (M1 > 60) {
             H = ++H;
             M1 = (M1 - 60);
-            } if (M2 < 0) {
-                H = --H;
-        		M2 = 60 + M2;
-                } if (H < 0) {
-                	H = 24 + H;
-                    }
+            }
+        if (M2 < 0) {
+            H = --H;
+            M2 = 60 + M2;
+            }
+        if (H < 0) {
+            H = 24 + H;
+            }
         
         System.out.printf("%d %d", H, M2);
 
