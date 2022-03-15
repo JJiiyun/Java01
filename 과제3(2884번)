@@ -23,7 +23,7 @@ public class Main {
             H = 24 + H;
             }
         
-        System.out.printf("%d %d", H, M2);
+        System.out.println(H+" "+M2);
 
     }
 }
