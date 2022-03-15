@@ -18,7 +18,7 @@ public class Main {
         		M2 = 60 + M2;
                 } if (H < 0) {
                 	H = 24 + H;
-                }
+                    }
         
         System.out.printf("%d %d", H, M2);
 
