@@ -4,26 +4,21 @@ public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int H = in.nextInt();
-        int M1 = in.nextInt();
+        int M = in.nextInt();
         
-        int M2 = M1 - 45;
+        in.close();
         
-        if (H > 24) {
-            H = H - 24;
-            }
-        if (M1 > 60) {
-            H = ++H;
-            M1 = (M1 - 60);
-            }
-        if (M2 < 0) {
+        if (M < 45) {
             H = --H;
-            M2 = 60 + M2;
+            M = 60 - (45 - M);
+            if (H < 0) {
+            	H = 24 + H;
             }
-        if (H < 0) {
-            H = 24 + H;
+            System.out.println(H + " " + M); // 그 조건들을 적용해서 출력한다
+        }
+            else {
+                System.out.println(H + " " + (M - 45));
             }
         
-        System.out.println(H+" "+M2);
-
     }
 }
