@@ -14,7 +14,7 @@ public class Main {
             if (H < 0) {
             	H = 24 + H;
             }
-            System.out.println(H + " " + M); // 그 조건들을 적용해서 출력한다
+            System.out.println(H + " " + M);
         }
             else {
                 System.out.println(H + " " + (M - 45));
