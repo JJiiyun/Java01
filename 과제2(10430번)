@@ -7,6 +7,8 @@ public class Main {
         int b = in.nextInt();
         int c = in.nextInt();
         
+        in.close();
+        
         System.out.println((a+b)%c);
         System.out.println(((a%c) + (b%c))%c);
         System.out.println((a*b)%c);
