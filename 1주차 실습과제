@@ -1,0 +1,38 @@
+public class Caerang {
+
+	public static void main(String[] args) {
+		int num = 10;
+	
+		String bin = Integer.toBinaryString(num);
+		
+		char a = bin.charAt(0);
+		char b = bin.charAt(1);
+		char c = bin.charAt(2);
+		char d = bin.charAt(3);
+		
+		char[] baeyeol = {a, b, c, d}; // 1010
+		
+		if(a == '0') {
+			a = '1';
+		} else {
+			a = '0';
+		} if(b == '0') {
+			b = '1';
+		} else {
+			b = '0';
+		} if(c == '0') {
+			c = '1';
+		} else {
+			c = '0';
+		} if(d == '0') {
+			d = '1';
+		} else {
+			d = '0';
+		}
+		
+		char[] baeyeol_2 = {a, b, c, d};
+		System.out.println(baeyeol_2);
+
+	}
+
+}
